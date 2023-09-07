@@ -5,7 +5,7 @@
 string SecondDigit(int arg)
 {   
     char[] digits = (arg.ToString()).ToCharArray();
-    if (digits.Length != 3)
+    if (digits.Length != 3) //Проверка соответствия условию.На вход должно подаваться трёхзначное число.
     {
         return ("Число не трёхзначное");
     }
