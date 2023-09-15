@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//Задача 19* Написать метод, который принимает на вход
+// число и проверяет, является ли оно палиндромом.Использовать при этом Dictionary
 using System;
 
 uint DataInput(string msg) //Ввод числа.uint для большего диапазона
