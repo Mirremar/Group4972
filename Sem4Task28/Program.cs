@@ -17,29 +17,23 @@ void PrintResult(string msg)
 //Вводим число->ReadData
 //Считаем произв
 //Выводим результат->PrintResult
-int SimpleMult(int numA)
+long SimpleMult(int numA)
 {
 
     int sumOfNumber = 1;
-    for (int i = 1; i <= numA; i++)
+    for (int i = 2; i <= numA; i++)
     {
         sumOfNumber *= i;
     }
     return sumOfNumber;
 }
 
-//int GaussSum(int numA)
-/*{
-    int sumOfNumber = 0;
-    sumOfNumber = (numA*(numA+1))/2;
-    return sumOfNumber;
-}*/
-int Recurs(int n)
+long Recurs(int n)
 {
     if(n==1) return 1;
     else
     {
-        return Recurs(n*(n-1));
+        return n*Recurs(n-1);
     }
 
 
@@ -47,10 +41,10 @@ int Recurs(int n)
 
 int numA = ReadData("введите число");
 DateTime d1 = DateTime.Now;
-int res1 = SimpleMult(numA);
+long res1 = SimpleMult(numA);
 Console.WriteLine(DateTime.Now - d1);
 DateTime d2 = DateTime.Now;
-int res2 = Recurs(numA);
+long res2 = Recurs(numA);
 Console.WriteLine(DateTime.Now - d2);
-PrintResult("Sum = " + $"{res1}");
-PrintResult("Sum = " + $"{res2}");
+PrintResult("Mult = " + $"{res1}");
+PrintResult("Mult = " + $"{res2}");
