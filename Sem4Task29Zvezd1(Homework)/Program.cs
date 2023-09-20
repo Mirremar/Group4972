@@ -9,7 +9,7 @@ int ReadData(string msg) //чтение данных
 }
 
 
-void PrintArray(int[] arr) //Вывод массива.Ввод длины не нужен,так как задан условием задачи
+void PrintArray(int[] arr) //Вывод массива.
 {
     Console.Write("[ ");
     for (int i = 0; i < arr.Length - 1; i++)
