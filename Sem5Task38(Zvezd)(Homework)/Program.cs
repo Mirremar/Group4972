@@ -103,3 +103,5 @@ Console.WriteLine();
 Console.WriteLine("Сортировка подсчётом: ");
 CountSort(array2);
 PrintArray(array2);
+Console.WriteLine();
+Console.WriteLine("Разница между первым и последним элементом равна " + (array2[array2.Length-1] - array2[0]));
